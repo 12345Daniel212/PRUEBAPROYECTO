@@ -6,7 +6,7 @@ package backEnd;
 
 /**
  *
- * @author DANIEL
+ * @author DANIEL R
  */
 public class Persona {
 
@@ -65,7 +65,7 @@ public class Persona {
     }
 
 
-    //METODOS QUE SERAN HEREDADOS
+    //METODOS  QUE SERAN HEREDADOS
 
     public void mostrarDatos() {
         System.out.println("RFC: " + RFC);
