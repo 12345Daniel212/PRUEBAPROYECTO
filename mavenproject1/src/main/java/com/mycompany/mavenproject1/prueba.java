@@ -9,6 +9,6 @@ package com.mycompany.mavenproject1;
  * @author rodri
  */
 public class prueba {
-    //esto es una prueba del funcionamiento de git hub en net beans en dos pcs
+    //esto es una prueba del funcionamiento de git hub en net beans en dos pc distintas laptop y desktop
     
 }
