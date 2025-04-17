@@ -11,10 +11,10 @@ package backEnd;
 public class Empleado extends Persona {
 
       //ATRIBUTOS
-      int idEmpleado;
-      String horario;
-      String foto;
-      String numeroSS;
+      private int idEmpleado;
+      private String horario;
+      private String foto;
+      private String numeroSS;
 
     //CONSTRUCTORES
     public Empleado() {
@@ -68,7 +68,7 @@ public class Empleado extends Persona {
         //METODOS QUE SON HEREDADOS DE LA CLASE PERSONA
 
       @Override
-        public void mostrarDatos() {
+        public void mostrarDatosPersona() {
           System.out.println("RFC: " + RFC);
           System.out.println("Nombre: " + nombre);
           System.out.println("Celular: " + celular);

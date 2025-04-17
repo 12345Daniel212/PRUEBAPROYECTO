@@ -8,10 +8,10 @@ public class Persona {
 
     //ATRIBUTOS
 
-    String RFC;
-    String nombre;
-    String celular;
-    String direccion;
+    protected String RFC;
+    protected String nombre;
+    protected String celular;
+    protected String direccion;
 
     //CONSTRUCTORES
     public Persona() {
@@ -63,7 +63,7 @@ public class Persona {
 
     //METODOS  QUE SERAN HEREDADOS
 
-    public void mostrarDatos() {
+    public void mostrarDatosPersona() {
         System.out.println("RFC: " + RFC);
         System.out.println("Nombre: " + nombre);
         System.out.println("Celular: " + celular);

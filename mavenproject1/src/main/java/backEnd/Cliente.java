@@ -11,8 +11,8 @@ package backEnd;
 public class Cliente extends Persona{
 
     //ATRIBUTOS
-    double minCredito;
-    double maxCredito;
+    private double minCredito;
+    private double maxCredito;
 
     //CONTRUCTORES
     public Cliente() {
@@ -48,7 +48,8 @@ public class Cliente extends Persona{
      //METODOS QUE SON HEREDADOS DE LA CLASE PERSONA
 
      @Override
-     public void mostrarDatos() {
+     public void mostrarDatosPersona() {
+       super.mostrarDatosPersona();
        System.out.println("RFC: " + RFC);
        System.out.println("Nombre: " + nombre);
        System.out.println("Celular: " + celular);
