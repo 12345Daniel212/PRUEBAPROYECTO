@@ -8,7 +8,7 @@ package backEnd;
  *
  * @author DANIEL
  */
-public class Articulo {
+public class Articulo extends Marca {
 
   //ATRIBUTOS
   protected int idArticulo;

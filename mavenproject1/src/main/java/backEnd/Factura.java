@@ -13,15 +13,15 @@ import java.util.Date;
 public class Factura extends Articulo {
 
   //ATRIBUTOS
-  private int idFactura;
-  private String tipoFactura;
-  private Date fechaGeneracion;
-  private char status;
-  private double subTotal;
-  private double iva;
-  private double total;
-  private Date fechaPago;
-  private String horaCompra;
+  protected int idFactura;
+  protected String tipoFactura;
+  protected Date fechaGeneracion;
+  protected char status;
+  protected double subTotal;
+  protected double iva;
+  protected double total;
+  protected Date fechaPago;
+  protected String horaCompra;
 
   //CONSTRUCTOR
   public Factura(int idFactura, String tipoFactura, Date fechaGeneracion, char status, double subTotal, double iva, double total, Date fechaPago, String horaCompra) {
@@ -123,6 +123,4 @@ public class Factura extends Articulo {
     System.out.println("Fecha de Pago: " + fechaPago);
     System.out.println("Hora de Compra: " + horaCompra);
   }
-
-
 }
