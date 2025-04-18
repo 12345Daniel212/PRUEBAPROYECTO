@@ -37,7 +37,7 @@ public class FramePrincipal extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
-        jButton4 = new javax.swing.JButton();
+        btnSalir = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -69,17 +69,17 @@ public class FramePrincipal extends javax.swing.JFrame {
 
         jPanel3.setBackground(new java.awt.Color(0, 51, 153));
 
-        jButton1.setBackground(new java.awt.Color(244, 125, 67));
+        jButton1.setBackground(new java.awt.Color(51, 153, 255));
         jButton1.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 18)); // NOI18N
         jButton1.setText("PERSONAS");
         jButton1.setBorderPainted(false);
 
-        jButton2.setBackground(new java.awt.Color(244, 125, 67));
+        jButton2.setBackground(new java.awt.Color(51, 153, 255));
         jButton2.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 18)); // NOI18N
         jButton2.setText("ARTICULOS");
         jButton2.setBorderPainted(false);
 
-        jButton3.setBackground(new java.awt.Color(244, 125, 67));
+        jButton3.setBackground(new java.awt.Color(51, 153, 255));
         jButton3.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 18)); // NOI18N
         jButton3.setText("FACTURAS");
         jButton3.setBorderPainted(false);
@@ -135,10 +135,10 @@ public class FramePrincipal extends javax.swing.JFrame {
 
         jPanel5.setBackground(new java.awt.Color(0, 51, 153));
 
-        jButton4.setBackground(new java.awt.Color(244, 125, 67));
-        jButton4.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 18)); // NOI18N
-        jButton4.setText("SALIR");
-        jButton4.setBorderPainted(false);
+        btnSalir.setBackground(new java.awt.Color(51, 153, 255));
+        btnSalir.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 18)); // NOI18N
+        btnSalir.setText("SALIR");
+        btnSalir.setBorderPainted(false);
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -146,14 +146,14 @@ public class FramePrincipal extends javax.swing.JFrame {
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
                 .addContainerGap(355, Short.MAX_VALUE)
-                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(21, 21, 21))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addGap(15, 15, 15)
-                .addComponent(jButton4)
+                .addComponent(btnSalir)
                 .addContainerGap(17, Short.MAX_VALUE))
         );
 
@@ -231,10 +231,10 @@ public class FramePrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnSalir;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
