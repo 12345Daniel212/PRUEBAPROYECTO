@@ -17,13 +17,6 @@ public class Empleado extends Persona {
       private String numeroSS;
 
     //CONSTRUCTORES
-    public Empleado() {
-        super();
-        this.idEmpleado = 0;
-        this.horario = "";
-        this.foto = "";
-        this.numeroSS = "";
-    }
 
     public Empleado(int idEmpleado, String horario, String foto, String numeroSS, String RFC, String nombre, String celular, String direccion) {
         super(RFC, nombre, celular, direccion);
@@ -31,6 +24,14 @@ public class Empleado extends Persona {
         this.horario = horario;
         this.foto = foto;
         this.numeroSS = numeroSS;
+    }
+
+    public Empleado() {
+        super();
+        this.idEmpleado = 0;
+        this.horario = "";
+        this.foto = "";
+        this.numeroSS = "";
     }
 
     //GETTERS Y SETTERS
@@ -76,5 +77,7 @@ public class Empleado extends Persona {
           System.out.println("ID Empleado: " + idEmpleado);
           System.out.println("Horario: " + horario);
           System.out.println("Foto: " + foto);
+          System.out.println("Numero de Seguro Social: " + numeroSS);
+
       }
 }
