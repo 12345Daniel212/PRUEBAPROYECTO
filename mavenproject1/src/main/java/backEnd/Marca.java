@@ -9,5 +9,31 @@ package backEnd;
  * @author DANIEL
  */
 public class Marca {
-    
+
+      //ATRIBUTOS
+      protected String marca;
+
+      //CONSTRUCTOR
+      public Marca(int idMarca, String nombreMarca) {
+          this.marca = nombreMarca;
+      }
+
+      public Marca() {
+          this.marca = "";
+      }
+
+      //GETTERS Y SETTERS
+
+      public void setNombreMarca(String nombreMarca) {
+          this.marca = nombreMarca;
+      }
+      public String getNombreMarca() {
+          return marca;
+      }
+
+      //TO STRING
+      @Override
+      public String toString() {
+          return "Marca{" + "idMarca=" + marca + ", nombreMarca=" + nombreMarca + '}';
+      }
 }
