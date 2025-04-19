@@ -16,7 +16,7 @@ public class detalleFactura extends Factura {
   private int cantidad;
 
   //CONSTRUCTOR
-  public detalleFactura(int cantidad, int idFactura, String tipoFactura, Date fechaGeneracion, char status, double subTotal, double iva, double total, Date fechaPago, String horaCompra) {
+  public detalleFactura(int idFactura, String tipoFactura, Date fechaGeneracion, char status, double subTotal, double iva, double total, Date fechaPago, String horaCompra, int idArticulo, String nombre, double costo, Marca marca, tipoProducto tipo) {
     super(idFactura, tipoFactura, fechaGeneracion, status, subTotal, iva, total, fechaPago, horaCompra);
     this.cantidad = cantidad;
   }

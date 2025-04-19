@@ -17,16 +17,23 @@ public class Articulo extends Marca {
 
       // Composición: incluir Marca y tipoProducto como atributos
       protected Marca marca;
-      protected tipoProducto tipoProducto;
+      protected tipoProducto tipo;
 
 
   //CONSTRUCTOR
-    public Articulo(int idArticulo, String nombre, double costo, Marca marca, tipoProducto tipoProducto) {
+    public Articulo(int idArticulo, String nombre, double costo, Marca marca, tipoProducto tipo) {
       this.idArticulo = idArticulo;
       this.nombre = nombre;
       this.costo = costo;
       this.marca = marca;
-      this.tipoProducto = tipoProducto;
+      this.tipo = tipo;
+  }
+  public Articulo() {
+      this.idArticulo = 0;
+      this.nombre = "";
+      this.costo = 0.0;
+      this.marca = new Marca();
+      this.tipo = new tipoProducto();
   }
 
   //GETTERS Y SETTERS
@@ -54,20 +61,17 @@ public class Articulo extends Marca {
   public Marca getMarca() {
     return marca;
   }
-  public void setTipoProducto(tipoProducto tipoProducto) {
-    this.tipoProducto = tipoProducto;
+  public void setTipoProducto(tipoProducto tipo) {
+    this.tipo = tipo;
   }
   public tipoProducto getTipoProducto() {
-    return tipoProducto;
+    return tipo;
   }
   //TO STRING
   @Override
   public String toString() {
-    return "Articulo{" + "idArticulo=" + idArticulo + ", nombre=" + nombre + ", costo=" + costo + ", marca=" + marca + ", tipoProducto=" + tipoProducto + '}';
+    return "Articulo{" + "idArticulo=" + idArticulo + ", nombre=" + nombre + ", costo=" + costo + ", marca=" + marca + ", tipoProducto=" + tipo + '}';
   }
-
-
-
 
     //METODOS QUE SERAN HEREDADOS
 
@@ -76,7 +80,7 @@ public class Articulo extends Marca {
       System.out.println("Nombre: " + nombre);
       System.out.println("Costo: " + costo);
       System.err.println("Marca: " + marca.getNombreMarca());
-      System.out.println("Tipo de Producto: " + tipoProducto.getTipoProducto());
+      System.out.println("Tipo de Producto: " + tipo.getTipoProducto());
   }
 
 }

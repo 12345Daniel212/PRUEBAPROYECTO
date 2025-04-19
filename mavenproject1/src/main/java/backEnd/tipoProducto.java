@@ -11,28 +11,27 @@ package backEnd;
 public class tipoProducto {
 
     //ATRIBUTOS
-    protected String tipoProducto;
+    private String tipo;
 
     //CONSTRUCTOR
-    public tipoProducto(int idTipoProducto) {
-      this.tipoProducto = this.tipoProducto;
+    public tipoProducto(String tipo) {
+        this.tipo = tipo;
     }
-
     public tipoProducto() {
-      this.tipoProducto = "";
+        this.tipo = "";
     }
 
     //GETTERS Y SETTERS
-    public void setTipoProducto(String tipoProducto) {
-      this.tipoProducto = tipoProducto;
+    public void setTipoProducto(String tipo) {
+      this.tipo = tipo;
     }
     public String getTipoProducto() {
-      return tipoProducto;
+      return tipo;
     }
     //TO STRING
     @Override
     public String toString() {
-      return "tipoProducto{" + "tipoProducto=" + tipoProducto + '}';
+      return "tipoProducto{" + "tipoProducto=" + tipo + '}';
     }
 
 }

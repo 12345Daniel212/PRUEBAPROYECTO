@@ -11,7 +11,7 @@ package backEnd;
 public class Marca {
 
       //ATRIBUTOS
-      protected String marca;
+      private String marca;
 
       //CONSTRUCTOR
       public Marca(int idMarca, String nombreMarca) {
@@ -32,8 +32,8 @@ public class Marca {
       }
 
       //TO STRING
-      @Override
-      public String toString() {
-          return "Marca{" + "idMarca=" + marca + ", nombreMarca=" + nombreMarca + '}';
-      }
+        @Override
+        public String toString() {
+            return "Marca{" + "marca=" + marca + '}';
+        }
 }

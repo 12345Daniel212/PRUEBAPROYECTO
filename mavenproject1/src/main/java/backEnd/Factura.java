@@ -23,8 +23,10 @@ public class Factura extends Articulo {
   protected Date fechaPago;
   protected String horaCompra;
 
-  //CONSTRUCTOR
-  public Factura(int idFactura, String tipoFactura, Date fechaGeneracion, char status, double subTotal, double iva, double total, Date fechaPago, String horaCompra) {
+  //CONSTRUCTORES
+
+  public Factura(int idFactura, String tipoFactura, Date fechaGeneracion, char status, double subTotal, double iva, double total, Date fechaPago, String horaCompra, int idArticulo, String nombre, double costo, Marca marca, tipoProducto tipo) {
+    super(idArticulo, nombre, costo, marca, tipo);
     this.idFactura = idFactura;
     this.tipoFactura = tipoFactura;
     this.fechaGeneracion = fechaGeneracion;
@@ -34,8 +36,10 @@ public class Factura extends Articulo {
     this.total = total;
     this.fechaPago = fechaPago;
     this.horaCompra = horaCompra;
-  }
+}
+
   public Factura() {
+    super(); 
     this.idFactura = 0;
     this.tipoFactura = "";
     this.fechaGeneracion = new Date();
@@ -102,25 +106,23 @@ public class Factura extends Articulo {
   public String getHoraCompra() {
     return horaCompra;
   }
-
   //TO STRING
   @Override
   public String toString() {
-    return "Factura{" + "idFactura=" + idFactura + ", tipoFactura=" + tipoFactura + ", fechaGeneracion=" + fechaGeneracion + ", status=" + status + ", subTotal=" + subTotal + ", iva=" + iva + ", total=" + total + ", fechaPago=" + fechaPago + ", horaCompra=" + horaCompra + '}';
+    return "Factura{" + "idFactura=" + idFactura + ", tipoFactura=" + tipoFactura + ", fechaGeneracion=" + fechaGeneracion + ", status=" + status + ", subTotal=" + subTotal + ", iva=" + iva + ", total=" + total + ", fechaPago=" + fechaPago + ", horaCompra=" + horaCompra + super.toString() + '}';
   }
 
-  //METODOS QUE ESTAN SIENDO HEREDADOS
+  //METODO QUE SE ENCARGA DE MOSTRAR LOS DATOS DE LA FACTURA CON TODOS LOS DATOS INCLUYENDO LOS DE LA CLASE ARTICULO
   @Override
   public void mostrarDatosArticulo() {
-    super.mostrarDatosArticulo();
-    System.out.println("idFactura: " + idFactura);
-    System.out.println("Tipo de Factura: " + tipoFactura);
-    System.out.println("Fecha de Generacion: " + fechaGeneracion);
-    System.out.println("Status: " + status);
-    System.out.println("SubTotal: " + subTotal);
-    System.out.println("IVA: " + iva);
-    System.out.println("Total: " + total);
-    System.out.println("Fecha de Pago: " + fechaPago);
-    System.out.println("Hora de Compra: " + horaCompra);
+    System.out.println("Factura{" + "idFactura=" + idFactura + ", tipoFactura=" + tipoFactura + ", fechaGeneracion=" + fechaGeneracion + ", status=" + status + ", subTotal=" + subTotal + ", iva=" + iva + ", total=" + total + ", fechaPago=" + fechaPago + ", horaCompra=" + horaCompra + super.toString() + '}');
   }
+
+
+
+
+
+
+
+
 }
