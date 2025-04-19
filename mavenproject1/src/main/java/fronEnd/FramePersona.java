@@ -99,6 +99,11 @@ public class FramePersona extends javax.swing.JFrame {
         btnSalir.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 18)); // NOI18N
         btnSalir.setText("SALIR");
         btnSalir.setBorderPainted(false);
+        btnSalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSalirActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -158,6 +163,12 @@ public class FramePersona extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
+    FramePrincipal nuevoFrame = new FramePrincipal(); 
+    nuevoFrame.setVisible(true);          
+    this.dispose();
+    }//GEN-LAST:event_btnSalirActionPerformed
 
     /**
      * @param args the command line arguments

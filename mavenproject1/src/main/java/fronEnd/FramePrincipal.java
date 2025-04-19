@@ -73,16 +73,31 @@ public class FramePrincipal extends javax.swing.JFrame {
         jButton1.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 18)); // NOI18N
         jButton1.setText("PERSONAS");
         jButton1.setBorderPainted(false);
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setBackground(new java.awt.Color(51, 153, 255));
         jButton2.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 18)); // NOI18N
         jButton2.setText("ARTICULOS");
         jButton2.setBorderPainted(false);
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton3.setBackground(new java.awt.Color(51, 153, 255));
         jButton3.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 18)); // NOI18N
         jButton3.setText("FACTURAS");
         jButton3.setBorderPainted(false);
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icono_personas-removebg-preview.png"))); // NOI18N
 
@@ -139,6 +154,11 @@ public class FramePrincipal extends javax.swing.JFrame {
         btnSalir.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 18)); // NOI18N
         btnSalir.setText("SALIR");
         btnSalir.setBorderPainted(false);
+        btnSalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSalirActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -194,6 +214,28 @@ public class FramePrincipal extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    FramePersona nuevoFrame = new FramePersona(); 
+    nuevoFrame.setVisible(true);          
+    this.dispose();       
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    FrameArticulo nuevoFrame = new FrameArticulo(); 
+    nuevoFrame.setVisible(true);          
+    this.dispose();
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    FrameFactura nuevoFrame = new FrameFactura(); 
+    nuevoFrame.setVisible(true);          
+    this.dispose();
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_btnSalirActionPerformed
 
     /**
      * @param args the command line arguments
