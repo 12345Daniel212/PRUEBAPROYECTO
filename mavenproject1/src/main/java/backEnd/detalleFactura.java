@@ -16,8 +16,8 @@ public class detalleFactura extends Factura {
   private int cantidad;
 
   //CONSTRUCTOR
-  public detalleFactura(int idFactura, String tipoFactura, Date fechaGeneracion, char status, double subTotal, double iva, double total, Date fechaPago, String horaCompra, int idArticulo, String nombre, double costo, Marca marca, tipoProducto tipo) {
-    super(idFactura, tipoFactura, fechaGeneracion, status, subTotal, iva, total, fechaPago, horaCompra);
+  public detalleFactura(int idFactura, String tipoFactura, Date fechaGeneracion, char status, double subTotal, double iva, double total, Date fechaPago, String horaCompra, int idArticulo, String nombre, double costo, Marca marca, tipoProducto tipo, int cantidad) {
+    super(idFactura, tipoFactura, fechaGeneracion, status, subTotal, iva, total, fechaPago, horaCompra, idArticulo, nombre, costo, marca, tipo);
     this.cantidad = cantidad;
   }
   public detalleFactura() {
@@ -35,9 +35,10 @@ public class detalleFactura extends Factura {
 
   //TO STRING
   @Override
-  public String toString() {
+public String toString() {
     return "detalleFactura{" + "cantidad=" + cantidad + ", idFactura=" + idFactura + ", tipoFactura=" + tipoFactura + ", fechaGeneracion=" + fechaGeneracion + ", status=" + status + ", subTotal=" + subTotal + ", iva=" + iva + ", total=" + total + ", fechaPago=" + fechaPago + ", horaCompra=" + horaCompra + '}';
   }
+
 
   //METODOS QUE ESTAN SIENDO HEREDADOS
   @Override

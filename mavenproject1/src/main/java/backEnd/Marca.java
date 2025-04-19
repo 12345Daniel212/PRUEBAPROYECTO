@@ -14,7 +14,7 @@ public class Marca {
       private String marca;
 
       //CONSTRUCTOR
-      public Marca(int idMarca, String nombreMarca) {
+      public Marca(String nombreMarca) {
           this.marca = nombreMarca;
       }
 

@@ -15,16 +15,19 @@ public class Cliente extends Persona{
     private double maxCredito;
 
     //CONTRUCTORES
-    public Cliente() {
-        super();
-        this.minCredito = 0.0;
-        this.maxCredito = 0.0;
-    }
+
     public Cliente(double minCredito, double maxCredito, String RFC, String nombre, String celular, String direccion) {
         super(RFC, nombre, celular, direccion);
         this.minCredito = minCredito;
         this.maxCredito = maxCredito;
     }
+
+    public Cliente() {
+        super();
+        this.minCredito = 0.0;
+        this.maxCredito = 0.0;
+    }
+
 
     //GETTERS Y SETTERS
     public void setMinCredito(double minCredito) {
