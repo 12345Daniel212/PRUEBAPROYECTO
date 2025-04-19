@@ -25,7 +25,7 @@ public class Factura extends Articulo {
 
   //CONSTRUCTORES
 
-  public Factura(int idFactura, String tipoFactura, Date fechaGeneracion, char status, double subTotal, double iva, double total, Date fechaPago, String horaCompra, int idArticulo, String nombre, double costo, Marca marca, tipoProducto tipo) {
+  public Factura(int idFactura, String tipoFactura, Date fechaGeneracion, char status, double subTotal, double iva, Date fechaPago, String horaCompra, int idArticulo, String nombre, double costo, Marca marca, tipoProducto tipo) {
     super(idArticulo, nombre, costo, marca, tipo);
     this.idFactura = idFactura;
     this.tipoFactura = tipoFactura;
@@ -33,7 +33,6 @@ public class Factura extends Articulo {
     this.status = status;
     this.subTotal = subTotal;
     this.iva = iva;
-    this.total = total;
     this.fechaPago = fechaPago;
     this.horaCompra = horaCompra;
 }
@@ -88,12 +87,6 @@ public class Factura extends Articulo {
   public double getIva() {
     return iva;
   }
-  public void setTotal(double total) {
-    this.total = total;
-  }
-  public double getTotal() {
-    return total;
-  }
   public void setFechaPago(Date fechaPago) {
     this.fechaPago = fechaPago;
   }
@@ -112,10 +105,17 @@ public class Factura extends Articulo {
     return "Factura{" + "idFactura=" + idFactura + ", tipoFactura=" + tipoFactura + ", fechaGeneracion=" + fechaGeneracion + ", status=" + status + ", subTotal=" + subTotal + ", iva=" + iva + ", total=" + total + ", fechaPago=" + fechaPago + ", horaCompra=" + horaCompra + super.toString() + '}';
   }
 
+  //METODO PARA SACAR EL TOTAL DE LA FACTURA
+  public double calcularTotal() {
+    this.iva = this.iva / 10;
+    this.total = subTotal * iva;
+    return total;
+  }
+
   //METODOS QUE ESTAN SIENDO HEREDADOS
   @Override
   public void mostrarDatosArticulo() {
-    System.out.println("LA FACTURA ES: " + idFactura);
+    System.out.println("DATOS DE LA FACTURA : ");
     super.mostrarDatosArticulo();
     System.out.println("Tipo de factura: " + tipoFactura);
     System.out.println("Fecha de generacion: " + fechaGeneracion);

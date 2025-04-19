@@ -2,39 +2,3 @@ este sera el archivo para dar indicaciones sobre cambio y/o funcionamiento sobre
 
 ya esta todo el back End, se puede probar con el archivo MainClassPrueba, esto para probar metiendo datos y ver
 que se este ejecutando todo bien y dejar bien pulido todo para solo agregar los metodos al frond End.
-
-
-
-
-
-
-
- //PRUEBA DEL AREA DE CLIENTE
-        Cliente cliente = new Cliente( 1000.0, 5000.0 ,"ROADJADK23J2K", "DANIEL", "31110203", "Calle Verdadera 456");
-        System.out.println("RFC: " + cliente.getRFC());
-        System.out.println("Nombre: " + cliente.getNombre());
-        System.out.println("Celular: " + cliente.getCelular());
-        System.out.println("Direccion: " + cliente.getDireccion());
-        System.out.println("Minimo Credito: " + cliente.getMinCredito());
-        System.out.println("Maximo Credito: " + cliente.getMaxCredito());
-        System.out.println(cliente.toString());
-        cliente.mostrarDatosPersona();
-
-
-        //PRUEBA DE PRIMERO DAR DE ALTA UNA MARCA
-        Marca marca = new Marca("MarcaX");
-        System.out.println("Marca: " + marca.getNombreMarca());
-        System.out.println(marca.toString());
-        System.out.println("Marca actualizada: " + marca.getNombreMarca());
-        System.out.println(marca.toString());
-
-        //PRUEBA DE PRIMERO DAR DE ALTA UN TIPO DE PRODUCTO
-        tipoProducto tipoProducto = new tipoProducto("tipo de producto X");
-        System.out.println("Tipo de Producto: " + tipoProducto.getTipoProducto());
-        System.out.println(tipoProducto.toString());
-        System.out.println("Tipo de Producto actualizado: " + tipoProducto.getTipoProducto());
-        System.out.println(tipoProducto.toString());
-
-        //PRUEBA DE PIMPRESION DE UNA FACTURA
-        Factura factura = new Factura(001, "Factura", new Date(), 'A', 100.0, 16.0, 116.0, new Date(), "10:00", 1, "ArticuloX", 50.0, marca, tipoProducto);
-        factura.mostrarDatosArticulo();
