@@ -20,7 +20,6 @@ public class MainClassPrueba {
         System.out.println("--------------------------------------------------");
 
         Marca marca = new Marca("Marca ");
-        System.out.println("Marca: " + marca.getNombreMarca());
         System.out.println(marca.toString());
 
         System.out.println("--------------------------------------------------");
