@@ -1,5 +1,5 @@
 package backEnd;
-// import backEnd.Empleado; loca
+// import backEnd.Empleado;
 
 import java.util.Date;
 
